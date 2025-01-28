@@ -1,0 +1,137 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Add a background gradient */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 2rem;
+}
+
+/* Container styles */
+.container {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 1200px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form styles */
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input.form-control {
+  width: 100%; /* Full width for responsiveness */
+  max-width: 300px; /* Reduce the width for placeholders */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  color: #333;
+}
+
+input::placeholder {
+  font-size: 12px; /* Reduce placeholder font size */
+  color: #aaa;
+}
+
+button {
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+button.btn-warning {
+  background-color: #ffc107;
+  color: white;
+}
+
+button.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Task list styles */
+.list-group {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  background: #f9f9f9;
+  transition: box-shadow 0.3s ease;
+}
+
+.task-item:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-details h5 {
+  margin: 0;
+  font-size: 16px;
+  color: #007bff;
+}
+
+.task-details small {
+  display: block;
+  margin-top: 5px;
+  color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .form-group {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  input.form-control {
+      max-width: 100%;
+  }
+
+  button {
+      width: 100%;
+  }
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
